@@ -1,0 +1,196 @@
+@use "sass:math";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+$color-mode-type: data;
+
+$orange: #f98202;
+$yellow: #ffdd02;
+$blue: #007dbb;
+
+$primary: #00CCFF;
+$secondary: $blue;
+$success: #1be372;
+$danger: #ff5531;
+$warning: $yellow;
+$info: $primary;
+
+$body-color: $secondary;
+
+$light: #fff;
+$dark: #0c0b0c;
+
+// our only custom SCSS variable
+$bc-glass-bg-light: rgba($light, .5); // sets the opacity of the glass background
+$bc-glass-bg-dark: rgba($dark, .5);
+$bc-glass-blur: 12px;
+
+:root {
+  --bc-glass-blur: #{$bc-glass-blur};
+}
+
+// custom blue callom properties
+:root {
+  @include color-mode(light) {
+    --bc-glass-bg: #{$bc-glass-bg-light};
+    --bc-glass-bg-input: transparent;
+    --bc-card-bg: #{$bc-glass-bg-light};
+    --bc-card-border-color: #{$bc-glass-bg-light};
+
+    --bs-tertiary-bg: #{$bc-glass-bg-light};
+  }
+}
+
+:root {
+  @include color-mode(dark) {
+    --bc-glass-bg: #{$bc-glass-bg-dark};
+    --bc-glass-bg-input: rgba(0, 0, 0, .85);
+    --bc-card-bg: rgba(255, 255, 255, .05);
+    --bc-card-border-color: rgba(255, 255, 255, .15);
+
+    --bs-tertiary-bg: #{$bc-glass-bg-dark};
+  }
+}
+
+// enable features
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-cssgrid: true;
+
+// general
+$border-radius: .8rem;
+$border-radius-sm: .4rem;
+$border-radius-lg: 1.2rem;
+$border-radius-xl: 1.8rem;
+$border-radius-xxl: 2.4rem;
+$border-radius-pill: 50rem;
+
+$card-spacer-y: 1.75rem;
+$card-spacer-x: 2.25rem;
+$card-bg: var(--bc-card-bg);
+$card-border-color: var(--bc-card-border-color);
+$card-box-shadow: 4px 4px 5px rgba($secondary, 0.025);
+$card-cap-bg: var(--bc-card-bg);
+
+$alert-padding-y: .75rem;
+$alert-padding-x: 1.25rem;
+
+$nav-tabs-link-active-border-color: transparent;
+$nav-tabs-link-active-bg: $primary;
+$nav-tabs-link-active-color: $light;
+$nav-tabs-border-radius: $border-radius-sm;
+
+$nav-pills-border-radius: $border-radius-sm;
+
+$accordion-border-color: transparent;
+$accordion-button-active-bg: $primary;
+$accordion-button-active-color: $light;
+$accordion-bg: var(--bc-glass-bg);
+
+$dropdown-bg: rgba($light, .95);
+$dropdown-border-width: 0;
+$dropdown-link-hover-bg: rgba($primary, .05);
+
+$modal-backdrop-bg: rgba($light, .5);
+$modal-backdrop-opacity: 1;
+$modal-content-bg: var(--bc-glass-bg);
+$modal-content-border-width: 0;
+$modal-content-box-shadow-xs: 0 .5em .5em rgba(0, 0, 0, .05), 0 2em 3em rgba(0, 0, 0, .15);
+$modal-content-box-shadow-sm-up: $modal-content-box-shadow-xs;
+
+$popover-border-width: 0.000rem;
+$popover-header-bg: transparent;
+
+$toast-border-width: 0.000rem;
+$toast-header-background-color: transparent;
+$toast-background-color: rgba(255, 255, 255, 0.75);
+
+$table-bg: transparent;
+$table-striped-bg: rgba(255, 255, 255, 0.5);
+$table-hover-bg: rgba(255, 255, 255, 0.75);
+
+$alert-border-width: 0;
+
+$offcanvas-bg-color: var(--bc-glass-bg);
+$offcanvas-box-shadow: $modal-content-box-shadow-xs;
+
+$btn-box-shadow: .2em .2em .3em rgba($secondary, .2);
+$btn-border-width: 0;
+$btn-border-radius: $border-radius-sm;
+$btn-border-radius-sm: $border-radius-sm;
+$btn-border-radius-lg: $border-radius-sm;
+
+$pagination-border-radius: $border-radius-sm;
+$pagination-border-radius-sm: $border-radius-sm;
+$pagination-border-radius-lg: $border-radius-sm;
+
+// typo
+$font-size-root: 16px;
+$font-size-base: 1rem;
+$font-family-sans-serif: "Open Sans", sans-serif;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base * 1;
+
+// form
+$input-border-radius: $border-radius-sm;
+$input-border-radius-sm: $border-radius-sm;
+$input-border-radius-lg: $border-radius;
+
+$input-disabled-bg: transparent;
+$input-disabled-border-color: rgba($secondary, .25);
+
+$form-select-border-radius: $border-radius-sm;
+$form-select-border-radius-sm: $border-radius-sm;
+$form-select-border-radius-lg: $border-radius;
+$form-select-disabled-bg: transparent;
+$form-select-disabled-border-color: rgba($secondary, .25);
+$form-select-bg: var(--bc-glass-bg-input);
+$form-select-disabled-color: rgba($secondary, .25);
+
+$form-range-track-bg: rgba($light, .55);
+
+$input-focus-box-shadow: 0 0 0 .25rem rgba($secondary, .25);
+$input-focus-border-color: $secondary;
+
+$input-placeholder-color: rgba($secondary, .3);
+
+$input-padding-y: .5rem;
+$input-padding-x: 1rem;
+$input-padding-y-sm: .35rem;
+$input-padding-x-sm: .65rem;
+$input-padding-y-lg: .75rem;
+$input-padding-x-lg: 1.5rem;
+
+$form-select-padding-y: $input-padding-y;
+$form-select-padding-x: $input-padding-x;
+$form-select-padding-y-sm: $input-padding-y-sm;
+$form-select-padding-x-sm: $input-padding-x-sm;
+$form-select-padding-y-lg: $input-padding-y-lg;
+$form-select-padding-x-lg: $input-padding-x-lg;
+
+$input-border-color: $secondary;
+$input-bg: var(--bc-glass-bg-input);
+$input-box-shadow: 0 0 transparent;
+
+$form-select-border-color: transparent;
+$form-select-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.05);
+
+$form-check-input-width: 1.5em;
+$form-check-input-border: 1px solid $secondary;
+$form-check-input-bg: var(--bc-glass-bg-input);
+$form-check-input-checked-bg-color: $secondary;
+$form-check-input-focus-border-color: $secondary;
+$form-check-input-focus-box-shadow: 0 0 0 .25rem rgba($secondary, .25);
+
+$form-switch-bg-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-1, .cls-2 %7B stroke-width: 0px; %7D .cls-2 %7B fill: %23007dbb; %7D %3C/style%3E%3C/defs%3E%3Ccircle class='cls-1' cx='4' cy='4' r='3.83'/%3E%3Cpath class='cls-2' d='M4,.35c2.01,0,3.65,1.64,3.65,3.65s-1.64,3.65-3.65,3.65S.35,6.01.35,4,1.99.35,4,.35M4,0C1.79,0,0,1.79,0,4s1.79,4,4,4,4-1.79,4-4S6.21,0,4,0h0Z'/%3E%3C/svg%3E");
+$form-switch-checked-bg-image: $form-switch-bg-image;
+$form-switch-focus-bg-image: $form-switch-bg-image;
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";

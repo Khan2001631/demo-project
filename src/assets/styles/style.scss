@@ -1,0 +1,383 @@
+@use 'sass:color';
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+  --bc-body-bg-transparency: 0;
+}
+
+body {
+  background: url(../images/bg-new.jpeg) no-repeat center center fixed;
+  background-size: cover;
+
+  &:before { // overlay over body background image
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: var(--bc-body-bg-transparency);
+    z-index: -1;
+  }
+}
+
+body[data-bs-theme="dark"] {
+  background-color: #1e1e1e;
+  background-blend-mode: multiply;
+}
+
+.hyphens {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.form-switch {
+  --bc-form-switch-width: 3em;
+  padding-left: calc(var(--bc-form-switch-width) + .5em);
+
+  .form-check-input {
+    width: var(--bc-form-switch-width);
+    margin-left: calc(var(--bc-form-switch-width) * -1 - .5em);
+    background-size: auto calc(100% + 0.15em);
+    background-position-x: -0.08em;
+    background-color: var(--bs-body-bg);
+
+    &:checked {
+      background-position-x: calc(100% + 0.1em);
+      background-color: var(--bs-secondary);
+    }
+  }
+}
+
+// extend core button styling
+.btn {
+  font-weight: bolder;
+  position: relative;
+  overflow: hidden;
+
+  &:before { // subtle gradient overlay
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    opacity: .15;
+    pointer-events: none;
+  }
+
+  &-primary { // hard overwrite a11y color contrast
+    color: #fff !important;
+  }
+
+  .btn-group & {
+    box-shadow: none !important;
+  }
+}
+
+.btn-group {
+  border-radius: $border-radius;
+  box-shadow: $btn-box-shadow;
+
+  .btn-primary {
+    --bs-btn-active-bg: #{darken($primary, 10%)};
+  }
+
+  .btn-secondary {
+    --bs-btn-active-bg: #{darken($secondary, 10%)};
+  }
+
+  .btn-success {
+    --bs-btn-active-bg: #{darken($success, 10%)};
+  }
+
+  .btn-danger {
+    --bs-btn-active-bg: #{darken($danger, 10%)};
+  }
+
+  .btn-warning {
+    --bs-btn-active-bg: #{darken($warning, 10%)};
+  }
+
+  .btn-info {
+    --bs-btn-active-bg: #{darken($info, 10%)};
+  }
+
+  .btn-light {
+    --bs-btn-active-bg: #{darken($light, 10%)};
+  }
+}
+
+.accordion-button,
+.nav-link {
+  font-weight: bolder;
+
+  &:not(.collapsed),
+  &.active {
+    position: relative;
+    overflow: hidden;
+
+    &:before { // subtle gradient overlay
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
+      opacity: .15;
+      pointer-events: none;
+    }
+  }
+}
+
+.accordion-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba($primary, .15);
+  }
+
+  &:not(:first-child) {
+    border-top: 2px solid rgba(#fff, 1);
+  }
+
+  .accordion-button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  }
+}
+
+
+.alert {
+  box-shadow: 0 .25em .25em rgba(0, 0, 0, .05), 0 1em 1.5em rgba(0, 0, 0, .05);
+}
+
+// extend core card styling
+.card {
+  border-color: rgba($light, 1) rgba($dark, .1);
+  border-style: solid;
+  border-width: 3px 1px 1px;
+  box-shadow: 0 .5em .5em rgba(0, 0, 0, .05), 0 2em 3em rgba(0, 0, 0, .05);
+  backdrop-filter: blur(var(--bc-glass-blur));
+
+  [data-bs-theme="dark"] & {
+    border-color: rgba($light, .1) rgba($light, .1);
+  }
+
+  &:after { // soft inner shadow
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 2px);
+    border-radius: var(--bs-card-border-radius);
+    pointer-events: none;
+    z-index: -1;
+    box-shadow: inset 0 .75em 1.5em 0 $light, inset 0 0 1.5em 0 $light;
+    opacity: 1;
+
+    [data-bs-theme="dark"] & {
+      box-shadow: inset 0 .75em 1.5em 0 $dark, inset 0 0 1.5em 0 $dark;
+    }
+  }
+
+  &.bc-card-glow {
+    --bc-card-glow-light-shadow: 0 0 1em #fff, 0 0 6em #fff, 0 0 2em 0 rgba(0, 0, 0, 0.4), 0 1.75em 11.5em 0 #FFF, 0 0 11.5em 0 #fff, inset 0 0 0.25rem .2em #fff, 0 0 1em #fff, 0 0 1em #fff, 0 0 1em #fff, 0 0 1em #fff;
+    --bc-card-glow-white-background: rgba(255, 255, 255, .95);
+    --bc-card-glow-rainbow-gradient: linear-gradient(
+                    60deg,
+                    hsl(140, 100%, 50%),
+                    hsl(164, 100%, 50%),
+                    hsl(178, 100%, 50%),
+                    hsl(195, 100%, 50%),
+                    hsl(44, 85%, 66%),
+                    hsl(89, 85%, 66%),
+                    hsl(134, 85%, 66%),
+                    hsl(179, 85%, 66%)
+    );
+    // --bc-card-glow-rainbow-gradient: linear-gradient(
+    //                 60deg,
+    //                 hsl(224, 85%, 66%),
+    //                 hsl(269, 85%, 66%),
+    //                 hsl(314, 85%, 66%),
+    //                 hsl(359, 85%, 66%),
+    //                 hsl(44, 85%, 66%),
+    //                 hsl(89, 85%, 66%),
+    //                 hsl(134, 85%, 66%),
+    //                 hsl(179, 85%, 66%)
+    // );
+    --bc-card-glow-animation-duration: 3s;
+    --bc-card-glow-rainbow-blur: 1rem;
+    --bc-card-glow-rainbow-opacity: .5;
+
+    background: var(--bc-card-glow-white-background);
+    box-shadow: var(--bc-card-glow-light-shadow);
+    border-color: transparent;
+
+    // the idea of the rainbow gradient to have a large pseudo element with a moving gradient as background-image
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: var(--bc-card-glow-rainbow-gradient);
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: var(--bs-card-border-radius);
+      animation: moveGradient var(--bc-card-glow-animation-duration) alternate infinite;
+      opacity: var(--bc-card-glow-rainbow-opacity);
+      filter: blur(var(--bc-card-glow-rainbow-blur));
+    }
+
+    @keyframes moveGradient {
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    &:after {
+      background: rgba(#fff, .75);
+      box-shadow: inset 0 .75em 1.5em 0 rgba($light, .15), inset 0 0 1.5em 0 rgba($light, .15); // soft inner shadow, the default glass effect
+    }
+  }
+
+  .card-header,
+  .card-footer,
+  .card-body {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-header:first-child,
+  .card-footer:last-child {
+    border-radius: var(--bs-card-inner-border-radius);
+  }
+
+  .card-footer {
+    padding-bottom: .4rem;
+    padding-top: .4rem;
+  }
+
+  // fix dropdown z-index issue due to stacking context change because of backdrop-filter
+  &:has(.dropdown-toggle.show) {
+    z-index: 1;
+  }
+}
+
+.toast,
+.dropdown-menu {
+  backdrop-filter: blur(var(--bc-glass-blur));
+
+  [data-bs-theme="dark"] & {
+    background: rgba($dark, .9);
+  }
+}
+
+.offcanvas-backdrop,
+.modal-open .modal-backdrop {
+  backdrop-filter: blur(15px);
+}
+
+.modal[data-bs-backdrop="false"] {
+  pointer-events: none;
+
+  .modal-content {
+    background: rgba($light, .8);
+    backdrop-filter: blur(15px);
+    pointer-events: auto;
+  }
+}
+
+.modal-draggable {
+  .modal-dialog.has-been-dragged {
+    margin: 0;
+  }
+
+  .modal-header {
+    cursor: move;
+  }
+}
+
+body.draggable-modal-open {
+  overflow-y: auto !important;
+  padding-right: 0 !important;
+}
+
+// custom CSS rules
+.bc-line-before {
+  position: relative;
+
+  &:before {
+    background: $orange;
+    border-radius: 1rem;
+    content: "";
+    height: .15em;
+    left: -.8em;
+    position: absolute;
+    top: .8em;
+    width: .7em;
+  }
+}
+
+.bc-range {
+  // style range slider track
+  &::-webkit-slider-runnable-track {
+    background: $light;
+    border-radius: 1rem;
+    height: 1.5em;
+    box-shadow: 0 0 0 1px $secondary inset;
+
+    [data-bs-theme="dark"] & {
+      background: $dark;
+    }
+  }
+
+  // style range slider thumb
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: $light;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 1px $secondary inset;
+    height: 1.5em;
+    margin: 0 0;
+    width: calc(1.5em);
+
+    [data-bs-theme="dark"] & {
+      background: $dark;
+    }
+  }
+
+  &:active,
+  &:focus {
+    &::-webkit-slider-thumb {
+      box-shadow: 0 0 0 1px $secondary inset;
+    }
+  }
+
+  &:active {
+    &::-webkit-slider-thumb {
+      background-color: $secondary;
+    }
+  }
+}
+
+.icon {
+  &-default {
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+.bc-table-responsive {
+  overflow-x: auto;
+}
+
+@import "custom";

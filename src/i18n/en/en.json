@@ -1,0 +1,1793 @@
+{
+	"common": {
+	    "roles": "Roles",
+        "access": "Access",
+        "remove_access": "Remove Access"
+    },
+    "share_modal": {
+        "form_field": {
+            "user_email": {
+                "placeholder": "Name or Email" 
+            },
+            "invite_member": {
+                "label": "Please Select Role"
+            }
+        },
+        "text": {
+            "user_search": "Search user by Name or Email Or select from below list",
+            "user_access": "User(s) with access"
+        },
+        "error":"Please select at least one user to share the prompt.",
+        "btn": {
+            "share": {
+                "label": "Share Prompt",
+                "tooltip": "Click here to share this prompt"
+            },
+            "close": {
+                "label": "Close",
+                "tooltip": "Click here to close modal" 
+            }
+        }
+    },
+   
+    "login": {
+        "title": "Login", 	
+        "help":{
+            "title": "Login Help", 
+            "content": "Welcome to the BlueCallom World. If you have already an account you login with LinkedIn to get access to GPTBlue. In case you don't have an account, you still click on 'Login with LinkedIn' and we create automatically an account for you. The login with email is for corporate users whereas the company holds the account management for the respective users."
+        }, 
+	   "text": {
+            "by_continuing": {
+                "content": "By continuing, you agree to our"
+            }
+        },
+        "btn": {
+            "login": {
+                "label": "Login", 
+                "tooltip": "Login with your email and password, you cannot register that way. To register, go to a social login button. Its easy for you and more authentic for us." 
+            },
+		
+            "login_linkedin": {
+                "label": "Login/Registration with LinkedIn", 
+                "tooltip": "Login or if you don't have an account yet, we will create one automatically with your LinkedIn credentials." 
+            }
+        },
+        "link":{
+            "forgot_password": {
+                "text": "Forgot Password?", 
+                "tooltip": "You will receive an email to change your password. Your email is the email you registered with or the default email your social network is linked to." 
+            }, 
+            "terms_service": {
+                "text": "Terms of service", 
+                "tooltip": "Brings you to our website where we manage and maintain our terms." 
+            }, 
+            "privacy_policy": {
+                "text": "Privacy Policy", 
+                "tooltip": "If you don't have an account yet, create a free account and start your innovation process" 
+            },
+            "sign_up": {
+                "text": "If you don't have an account yet, create a free account and start your innovation process", 
+                "tooltip": "If you don't have an account yet, create a free account and start your innovation process" 
+            },
+            "corporate_login":{
+                "text": "For Corporate Login",
+                "tooltip": "Click here for corporate login"
+            }
+        },  
+        "form_field": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Email",
+                "validation_message": {
+                    "invalid": "You have entered invalid Email Id.",
+                    "required": "Email is required.",
+                    "invalid_format": "email address must be in the format of name@domain.com"
+                }
+            },
+            "password": {
+                "label": "Password",
+                "placeholder": "Password",
+                "validation_message": {
+                    "required": "Password is required."
+                }
+            }
+        } 
+    },
+    
+    "forgot_pwd": {
+        "title": "Forgot Password",
+        "help":{
+            "title": "Forgot Password Help", 
+            "content": "If you've forgotten your password, don't worry! We're here to help you regain access to your account. Please follow these simple steps: <br>Enter Your Email Address: In the field below, enter the email address associated with your account. We'll send you a link to reset your password.<br>Check Your Inbox: After submitting your email address, please check your email inbox (and spam/junk folder) for a message from us. This email will contain a link or instructions for resetting your password.<br>Follow the Instructions: Click on the link provided in the email or follow the instructions to reset your password. Make sure to create a strong, unique password to enhance the security of your account."
+        },
+        "form_field": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Email",
+                "validation_message": {
+                    "invalid": "You have entered invalid Email Id.",
+                    "required": "Email is required.",
+                    "invalid_format": "email address must be in the format of name@domain.com"
+                }
+            }
+        },
+        "btn": {
+            "reset": {
+                "label": "Reset Password", 
+                "tooltip": "Click here to reset your password." 
+            }
+        }
+    },
+    
+    "prompt": {
+        "dtd_ai_response": {
+            "help": {
+                "title":"GPTBlue DTD AI Response",
+                "content": "See the response from the AI and review it carefully. We suggest you make about 10 or more test runs with different user inputs to see how effective your prompt is."
+            },
+            "modal_help_content": "See the response from the AI and review it carefully. We suggest you make about 10 or more test runs with different user inputs to see how effective your prompt is."
+        },
+        "btn": {
+            "test_prompt": {
+                "label": "Local Test", 
+                "tooltip": "Test right here and get the respective response below",
+                "required_tooltip": "To test the prompt, please provide a default action."
+            }, 
+            "go_to_io_screen": {
+                "label": "Live Test", 
+                "tooltip": "Test the prompt in the user environment. It opens the prompt in GPTBlue IO",
+                "required_tooltip": "To test the prompt, please provide a default action."
+            },
+            "refine_result": {
+                "label": "Refine Result", 
+                "tooltip": "Please refine the result and run it again" 
+            }
+        },
+        "icon": {
+            "deploy": {
+                "tooltip": "Click to deploy this prompt",
+                "confirm_msg": "Deploy this prompt?",
+                "success_msg": "Prompt Deployed Successfully",
+                "error_msg": "Prompt Deploy Failed"
+            },
+            "download":{
+                "tooltip": "Click to download this prompt",
+                "confirm_msg": "Download this prompt?",
+                "success_msg": "Prompt successfully entered into your personal library",
+                "error_msg": "Prompt Download Failed"
+            }
+        },
+        "io_ai_prompt_execution": {
+            "help": {
+               "title": "Prompt Execution Help",
+                "content": "All GPTBlue-generated prompts show you how much time you gain, no matter whether in business hobby, personal or elsewhere. wenn delegating tasks to an AI."
+            }
+		},
+        "io_ai_response": {
+            "help": {
+               "title": "GPTBlue IO AI Response Help",
+                "content": "Here is the response from the Generative-AI. Please review it before you use it. The old rule 'Garbage in, Garbage out' is more important than ever before. The BlueCallom Prompt Framing Technology helps to frame every prompt in a way that is most accurate and helpful. Yet we all had communication challenges since thousands of years and now we are just in the beginning to overcome that deficiency."
+            }
+		},
+		"home": {
+            "help": {
+               "title": "My Applications Help",
+                "content": "<div>Welcome to the BlueCallom World. <br/>On this AI-Glazz, this is how we call the elements, you find all applications that you have access to or request access.<br/>GPTBlue IO is your AI-Workspace, where you can run all the prompts you added to your personal library.<br/>GPTBlue DID is your Development, Test, and Deploy space in case you want to create your own professional prompts.<br/>My Settings is where you setup your profile, manage your CallomCoins, the currency in the BlueCallom world.<br/>Partner Portal is for our Business Partners who want to create and sell prompts on BlueCallom<br/>Corporate Portal is for corporations who run BlueCallom as their AI network</div>"
+            },
+            
+			"time_tooltip": "Workplace productivity is often referred to as how much work is accomplished over a particular period of time. We want you to enjoy the extra time you can gain with more interesting work.",
+            
+			"icons_tooltips": {
+				"download": "Load it into your personal library.",
+				"dna": "Show the short prompt description the Author wrote. (It will be the description of the prompt - come from DB)",
+				"star": "Show the average star rating from USERS and the number of ratings",
+				"like": "Show the number of likes who saw the prompt but may not have used it yet.",
+				"share": "Share this prompt with friends or publicly online"
+			}
+		},
+        "personal_library_empty": "Your prompt Library is empty Visit the <a class='text-decoration-none' href='/home'>'BlueCallom Exchange'</a> and load some prompts here. <br />OR<br />If you want to create your own, Go to the <a class='text-decoration-none' href='/app/prompts/create'>GPTBlue DTD.</a> This Is the Prompt Designer for you to Develop-Test-Deploy prompts",
+        "personal_library_loading": "Your prompts are loading...",
+        
+        "org_library_empty": "Your organization's prompt library is empty. You can deploy your prompt to the organization library, and after approval by the library owner, it will be listed here.",
+  	
+        "btn_ask_tooltip": "Ask the massive AI that aggregated most of humanities knowledge", 
+  	
+        "icon_like_tooltip": "You help the author to know that this prompt worked out for you", 
+        "icon_dislike_tooltip": "You help the author to know that this prompt has not worked out for you", 
+        "icon_comment_tooltip": "Give feedback directly to prompt authors. Remember they continuously maintain and improve their prompts and that is why pay per use will build by far the best prompts over time :)", 
+        "icon_email_tooltip": "You can email the prompt result to the email address you have registered so you have it for later too, REUSE is good for prompts too - saves energy from the enormous AI servers,", 
+        "icon_pdf_tooltip": "You help the author to know that this prompt worked out for you", 
+  	
+        "btn_save_tooltip": "Save your content to store the content you have composed so far. IN the near future we will have an'auto save' feature with the option to manually save it. ", 
+         
+        "prompt_object_list": {
+            "title": "Prompt object list",
+            "help": {
+                "title": "Prompt object list help",
+                "content": "The various prompt objects will be fused to one prompt. Individually they help you frame a specific task or request. The more precise your prompt is crafted the better the outcome. Like when you negotiate a big deal, selecting carefully every word makes the difference."
+            },
+            "icon": {
+                "clock": {
+                    "tooltip": "Workplace productivity is often referred to as how much work is accomplished over a particular period of time. We want you to enjoy the extra time yoy can gain with more interesting work."
+                }
+            }
+        },
+		
+        "prompts_fetching_error": "Error fetching Prompts, Please refresh the page.",
+        "prompt_description": "Prompt Description",
+       
+        "analytics_fetch_error": "Error fetching Analytics, Please refresh the page.",
+        
+        "prompt_name": "Prompt Name",
+        "prompt_name_required": "Prompt Name is required.",
+        "askgpt_required": "Please enter prompt to get GPTBlue response.",
+        "prompt_productivity": "Prompt Productivity",
+        "prompt_productivity_tooltip": "The GPTBlue 'Prompt Productivity Gain' PPG shows you the productivity gain over manual work The PPG is X times of manual work.",
+        
+        "manual_hours": {
+            "label": "Manual<br />hours",
+            "validation_msg": {
+                "maxlength": "Please enter not more than 8 characters."
+            }
+        },
+        
+        "gain": "Gain",
+        "actor_persona": "Actor/Persona",
+        "prompt_select": "Please select a prompt from your library",
+        "environment_context": "Environment Context",
+        "elaborate_Challenge_description": "Elaborate Challenge Description",
+        "data_handling": "Data Handling",
+        
+        "audience": "Audience",
+        "task": "Task",
+        "task_details_descriptiom": "The Pre-Prompt serves as the initial context-setter in your prompt and is vital for framing discussions within an innovation project. It provides the AI with background information, setting the stage for more focused responses.",
+        "iterative_task": "Iterative Task",
+        "iterative_task_description": "Share Your Project Easily: We've made collaboration simple. Your GPTBlue project has a unique public URL that you can share with anyone. They can access your project without the need for a login.",
+        "default_action": "Default Action",
+        "default_action_required": "Default Action is required.",
+        "default_action_description": "The 'User Default Prompt' is used primarily for testing prompt framing and evaluating the responses generated by GPTBlue system. It simulates the user's input, allowing you to see how the AI responds to specific queries or statements.",
+        "writing_style": "Writing Style",
+        "timeline_priorities": "Timeline and priorities",
+        "output_format": "Output Format",
+        "output_format_description": "The Post-Prompt offers additional context or instructions to guide the GPTBlue's response. It helps refine the GPTBlue's understanding and ensures it generates responses aligned with the project's goals.",
+        "references": "References",
+        "function_call": "Function Call",
+        
+        "click_AskGPTBlue": "Please click on Test.",
+        "click_AskGPTBlue_msg2": "Please click on the 'Ask' button to Ask the massive AI that aggregated most of humanities knowledge",
+       
+        "actor_persona_description": "The Actor Definition specifies the perspective or role from which the AI should respond. It's especially useful in innovation projects with diverse team members, enabling tailored responses.",
+        "iterative_pre_prompt_tasks": "Iterative Pre-Prompt Tasks",
+        "iterative_post_prompt_format": "Iterative Post-Prompt Format",
+        "iterative_post_prompt_format_description": "An AI-generated response will be inserted for the iterative prompt",
+        "eContext_description": "Provide some background information about the situation the prompt will be used for. Keep in mind many paths lead to Rome but with an AI we are talking about a trillion paths. Provide related locations, materials, or processes within the situation you are working in. You may want to use this file to describe your business, related to the task you want to perform.",
+        "echescription_description": "Write down the specific challenge or function a user should perform. If you have specific data, terms, facts, Times. you may need to use it as a variable",
+        "dhandling_description": "Provide data you are using and treat them like a variable by putting the name into 'variable_name' Make the variable a unique name without killing its meaning. Here you may also restrict the size of the response. For instance: 'Write an 850-word response'",
+        "gptblueObjective_description": "Define the task objectives. This may be to get a plan example, write a post, or validate a plan you provided. Help the AI to recognize how it could best respond to your request",
+		"audience_description": "There is a high likelihood that your interaction is about any type of target audience, may it be customers, partners, or other stakeholders. Your audience may well be your internal teams or the whole organization.",
+		"writingstyle_description": "You may want to give GPT Blue a writing style by saying: 'write casually': You may also use this to set a 'heat. level between 0.2 and 1.0. ).2 would mean very factual, detailed, and emotionless. Good for legal responses.  1.0 is a very bloomy language for storytelling.",
+		"timeline_description": "Inject time-related prompt objects and manage priorities.Allowing the AI generate results with time-based priorities to alleviate bottlenecks",
+		"references_description": "Use this field when you want to add dedicated references to the result.",
+       
+        "save_prompt": "Save",
+    
+        "card_title_prompt_framing_controls": "Prompt Framing Controls", 
+        "card_title_prompt_framing_designer": "Prompt framing designer",
+        "card_title_prompt_framing_test_response": "GPTBlue Response", 
+    
+        "prompt_exection_title": "Let the prompt work for you",
+        "prompt_exection_subtitle": "Social media engagement prompt Post Integration inspiration",
+        
+        "my_prompt_library": {
+            "title": "My Prompt Library",
+            "help": {
+                "title": "My PromptLibrary Help",
+                "content": "<div>Your personal Prompt Library. You have 3 tabs:<br/>Tab 1        New, Business, Community, Personal, Custom<br/>Tab 2        Is defined by the selection of Tab 1<br/>For New: this is just a list of new prompts coming in from various sources<br/>For Business: Sales, marketing, R&D, Finance, HR…<br/>For Community: Clubs, Organizations, Religion, Sport, Gov, Education…<br/>For Personal: Family, Hobby, Interests, Home, Career, Health, Various…<br/>For Custom: Custom categories…<br/>Tab 3 Are subcategories where you are storing store your prompts<br/>When activating the settings function on the bottom, You see all available options that you can add in each tab. We uggest you use only the ones you need right now. You can always add tabs and create your own.</div>"
+            }
+        }
+    },
+    
+	"analytics": {
+        "help":{
+            "title": "Analytics Help", 
+            "content": "Shows the usage data over all from all activities performed by this prompt."
+        }
+	},
+    
+	"tips": {
+        
+        "f_call": {
+            "description": "Allowing to integrate functions into the prompt"
+        }
+	},
+    
+    "userProfile": {
+        "title": "Profile Details",
+
+        "help":{
+            "title": "My Main Profile", 
+            "content": "My Main Profile Help content coming soon"
+        }, 
+  	
+        "btn": {
+            "save": {
+                "label": "Save", 
+                "tooltip": "Click here to Save your changes" 
+            },
+            "edit_profile_pic": {
+                "label": "Edit Photo", 
+                "tooltip": "Click here to edit profile photo" 
+            }
+        },
+        "modal": {
+            "upload_image": {
+                "title": "Upload Image"
+            },
+            "btn": {
+                "upload": {
+                    "label": "Upload", 
+                    "tooltip": "Click here to upload image" 
+                },
+                "cancel": {
+                    "label": "Cancel", 
+                    "tooltip": "Click here to cancel" 
+                }
+            }
+        },
+        "form_field": {
+            "username": {
+                "label": "User Name",
+                "placeholder": "User Name",
+                "validation_message": {
+                    "required": "User name is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            }, 
+            "firstname": {
+                "label": "First Name",
+                "placeholder": "First Name",
+                "validation_message": {
+                    "required": "First name is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            }, 
+            "lastname": {
+                "label": "Last Name",
+                "placeholder": "Last Name",
+                "validation_message": {
+                    "required": "Last name is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            }, 
+		
+            "bio": {
+                "label": "Bio",
+                "placeholder": "Bio",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 250 characters."
+                }
+            }, 
+		
+            "email": {
+                "label": "Email Address",
+                "placeholder": "Email Address",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 250 characters.",
+                    "invalid": "You have entered invalid Email Id.",
+                    "required": "Email is required.",
+                    "invalid_format": "email address must be in the format of name@domain.com"
+                }
+            },
+            "bizz_email": {
+                "label": "Business Email",
+                "placeholder": "Business Email",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 250 characters.",
+                    "invalid": "You have entered invalid Email Id.",
+                    "required": "Email is required.",
+                    "invalid_format": "email address must be in the format of name@domain.com"
+                }
+            },
+            "mobile_phn": {
+                "label": "Mobile Phone",
+                "placeholder": "Mobile Phone",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 20 characters.",
+                    "invalid": "You have entered invalid mobile phone.",
+                    "invalid_format": "Please enter a valid phone number with country code e.g. +1-XXXXXXXXXX or +1(XXX)XXX-XXXX or +1-XXX-XXX-XXXX"
+                }
+            },
+            "city": {
+                "label": "City",
+                "placeholder": "City",
+                "validation_message": {
+                    "required": "City is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "state": {
+                "label": "State",
+                "placeholder": "State",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "postal_code": {
+                "label": "Post Code",
+                "placeholder": "Post Code",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "country": {
+                "label": "Country",
+                "placeholder": "Country",
+                "validation_message": {
+                    "required": "Country is required."
+                }
+            } ,
+            "company": {
+                "label": "Company",
+                "placeholder": "Company",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "company_url": {
+                "label": "Company URL",
+                "placeholder": "Company URL",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 250 characters.",
+                    "url_invalid": "You have entered invalid URL"
+                }
+            },
+            "title": {
+                "label": "Title",
+                "placeholder": "Title",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 60 characters."
+                }
+            },
+            "referal_key": {
+                "text": "Your Referral Id",
+                "label": "Enter your Refferal Key here",
+                "placeholder": "Refferal Key",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 26 characters."
+                },
+                "icon": {
+                    "copy": {
+                        "tooltip": "click here to copy Referral URL"
+                    }
+                },
+                "btn": {
+                    "generate":{
+                        "label": "Create Referral Key", 
+                        "tooltip": "Click here to create your Referral Key" 
+                    },
+                    "done": {
+                        "label": "Create Referral Key", 
+                        "tooltip": "" 
+                    }
+                },
+                "modal": {
+                    "title": "Create Referral Key",
+                    "content": "1) DON’T LOOSE YOUR REWARD <br>Please enter a Referral ID, that you may have received BEFORE you create your own. Otherwise you will loose the reward that would be given to you as a new user. If so ABORT this screen!<br><br>2) CREATE YOUR REFERRAL KEY<br>If you have not been referred, CONTINUE and create your referral Key. Share it with Friends and contacts who may be interested in exploring the fantastic world of Generative-AI and what Blueallom makes out of it.<br><br>For every new user who registered you will get CC 10,000 as reward which you can Use to execute professional prompts."
+                }
+            },
+            "company_connection": {
+                "title": "Company Connection",
+                "label": "Company Connection"
+            },
+            "interest": {
+                "title": "My Interests",
+                "prompt_user": {
+                    "label": "Prompt User"
+                },
+                "prompt_engineer": {
+                    "label": "Prompt Engineer"
+                },
+                "business_partner": {
+                    "label": "Business Partner"
+                },
+                "corporate_user": {
+                    "label": "Corporate User"
+                },
+                "corporate_manager": {
+                    "label": "Corporate Manager"
+                }
+            }
+        } 
+    },
+  
+    "accountDashboard": {
+        "title": "Your Personal Accounting Dashboard",
+
+        "help":{
+            "title": "Accounting Dashboard", 
+            "content": "Accounting Dashboard Help content coming soon"
+        },
+        "text": {
+            "balance": "Balance",
+            "acc_balance": "Account Balance last 30 days",
+            "acc_balance_ytd": "Account Balance YTD"
+        },
+        "btn": {
+            "buy": {
+                "label": "Buy", 
+                "tooltip": "Click here to buy"
+            },
+            "payout": {
+                "label": "Payout", 
+                "tooltip": "Click here to payout" 
+            },
+            "list": {
+                "label": "Lists", 
+                "tooltip": "Click here to get list" 
+            }
+        }
+    },
+    
+    "cc_purchase": {
+        "title": "CallomCoin Purchase",
+        "help":{
+            "title": "CallomCoin Purchase", 
+            "content": "CallomCoin Purchase Help content coming soon"
+        },
+        "table": {
+            "select": "Select",
+            "amount": "Amount",
+            "price": "Price",
+            "inc_vat": "Incl. VAT"
+        },
+        "error": "Please select one item.",
+        "form_field": {
+            "noOfPack": {
+                "label": "Number of Packs",
+                "placeholder": "",
+                "validation_msg": {
+                    "required": "Number of Pack is required.",
+                    "maxlength": "Please enter not more than 8 characters."
+                }
+            }
+        },
+        "text": {
+            "total": "Total Amount"
+        }
+    },
+    
+    "transaction": {
+        "title": "Transactions",
+        "help":{
+            "title": "Transaction", 
+            "content": "Transaction Help content coming soon"
+        },
+        "table": {
+            "title": {
+                "gold_table": "Gold Coin",
+                "status_table": "Status Coin"
+            },
+            "date": "Date",
+            "activity": "Activity",
+            "type": "Type",
+            "coin_spent": "Coin Spent",
+            "coin_added": "Coin Added",
+            "balance": "Balance"
+        }
+    },
+    
+    "payout_history": {
+        "content": "Accounting Dashboard Help conetnt coming soon",
+  	
+        "btn": {
+            "buy": {
+                "label": "Buy", 
+                "tooltip": "Click here to Buy" 
+            }
+        }
+    },
+    
+    "payout": {
+        "title": "CC Payout History",
+        "help":{
+            "title": "CC Payout History", 
+            "content": "CC Payout History Help content coming soon"
+        },
+        "table": {
+            "amount": "Amount",
+            "price": "Price",
+            "date": "Date"
+        }
+    },
+    
+    "my_connections": {
+        "title": "My Connections",
+        "help":{
+            "title": "My Connections", 
+            "content": "My Connections Help content coming soon"
+        },
+        "label": {
+            "invited_by": "Invited By",
+            "connection": "Connection"
+        }
+    },
+    
+    "cc_payout": {
+        "title": "CallomCoin Payout",
+        "help":{
+            "title": "CallomCoin Payout", 
+            "content": "CallomCoin Payout Help content coming soon"
+        },
+        "text": {
+            "current_balance": "Current Balance of CC",
+            "cc_trade_in":"CallomCoins you want to trade in",
+            "info":"we will transfer the payout amount to your bank account:"
+        },
+        "form_field": {
+            "auto_payout": {
+                "label": "Auto Payout"
+            }
+        }
+    },
+    "help_modal":{
+        "btn":{
+            "close": {
+                "label": "Close",
+                "tooltip": "Click here to close Help Modal"
+            }
+        },
+        "icon": {
+            "close": {
+                "tooltip": "Click here to close Help Modal"
+            }
+        }
+    },
+    
+    "company_portal": {
+        "link": {
+            "home": {
+                "label": "Corporate Portal",
+                "tooltip": "Do you want to become a BlueCallom Corporate User? Please click to register. We will explore with you how this makes most sense for you. If you decide to go forward, you will find the dedicated corporate portal when you click here."
+            }
+            
+        }
+    },
+    "organization_management": {
+        "link": {
+            "home": {
+                "label": "Corp. Manager",
+                "tooltip": "System managers can setup and manage internal and external partner organizations"
+            }
+            
+        }
+    },
+    "team_management": {
+        "link": {
+            "home": {
+                "label": "Team Manager",
+                "tooltip": "System managers can invite and manage users"
+            }
+            
+        }
+    },
+    "prompt_management": {
+        "link": {
+            "home": {
+                "label": "Prompt Manager",
+                "tooltip": "System managers can manage prompt related items"
+            }
+            
+        }
+    },
+    "coin_management": {
+        "link": {
+            "home": {
+                "label": "Coin Manager",
+                "tooltip": "Account Holders can buy and distribute coins"
+            }
+            
+        },
+        "title": "Organization's Accounting Dashboard",
+
+        "help":{
+            "title": "Accounting Dashboard", 
+            "content": "Accounting Dashboard Help content coming soon"
+        }
+    },
+    "library_management": {
+        "link": {
+            "home": {
+                "label": "Library Manager",
+                "tooltip": "System managers can manage the company home and library"
+            }
+            
+        }
+    },
+    "system_management": {
+        "link": {
+            "home": {
+                "label": "System Manager",
+                "tooltip": "System managers to customize the system"
+            }
+            
+        }
+    },
+    "prompt_library": {
+        "filter": {
+            "text": "Filter",
+            "tooltip": ""
+        },
+        "order": {
+            "text": "Order",
+            "tooltip": ""
+        }
+        
+    },
+    "pagination": {
+        "text": {
+            "prev": "Previous",
+            "next": "Next"
+        }
+    },
+    "update_pwd": {
+        "title": "Update Password",
+
+        "help": {
+            "title": "Update Password Help",
+            "content": "In order to update your password, please follow the below steps: <br>Enter your Email Address:  In the field below, enter the email address associated with your account.<br>The next step should be to type in your updated password. Make sure to create a strong, unique password to enhance the security of your account.<br>After submitting the form,an email will be sent confirming that your password has been updated."
+        },
+
+        "form_field": {
+          "currentPassword": {
+            "label": "Current Password",
+            "placeholder": "Current Password",
+            "validation_message": {
+                "required": "Current Password is required."
+            }
+          },
+          "newPassword": {
+            "label": "New Password",
+            "placeholder": "New Password",
+            "validation_message": {
+                "required": "New Password is required.",
+                "invalid": "Password must have atleast one uppercase character, one lowercase character,one special symbol and should be in the range of 8 to 50."
+            }
+          },
+        "confirmPassword": {
+            "label": "Confirm Passowrd",
+            "placeholder": "Confirm Password",
+            "validation_message": {
+                "required": "Confirm Passowrd is required.",
+                "custom_message": "Passwords should match."
+            }
+          }
+        },
+        "btn": {
+            "update": {
+                "label": "Update Password",
+                "tooltip": "Click here to update your password"
+            }
+        }
+    },
+    "image_crop":{
+        "upload_title": "Choose image file to upload",
+        "auth_msg":"Please login to update image.",
+        "edit_photo_title":"Edit Photo",
+        
+        "image_size_msg":"Only JPG, JPEG, and PNG images are allowed.",
+        "image_type_msg": "Only JPG, JPEG, and PNG images are allowed.",
+        "canvas_err":"Canvas is empty",
+        "crop_before_upload_alert":"Please crop the image before uploading.",
+        "canvas_null_msg":"Canvas context is null"
+    },
+    
+    "promptsapproval": {
+        "title": "Prompt(s) Review",
+
+        "help":{
+            "title": "Prompts Approval", 
+            "content": "Prompts Approval Help content coming soon"
+        },
+
+        "table": {
+            "prompt_name": "Prompt Name",
+            "author_name": "Author Name",
+            "created_date": "Date",
+            "library": "Library",
+            "author_status": "Author Status",
+            "blc_status": "BLC Status",
+            "prompt_lib_status": "Prompt Lib Status",
+            "action": "Action"
+        },
+        "btn": {
+            "green" : {
+                "tooltip": "Approve this prompt"
+            },
+            "red" : {
+                "tooltip": "Block this prompt"
+            },
+            "yellow" : {
+                "tooltip": "Reject this prompt"
+            }
+        }
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    "card": {
+        "common": {
+            "icon": {
+                  "tooltip": {
+                    "like": "Your 'Like' will tell us to keep doing what you like. If NOT, please provide a feedback - it is on every Glazz tile on the lower left side.", 
+                    "dislike": "We understand you changed your mind. Your feedback would be great.", 
+                    "share": "Share on social media will be available soon", 
+                    "feedback": "Your feedback goes straight to our engineers. We love feedback Good, bad or ugly.", 
+                    "help": "Click here to open card help", 
+                    "setting": "Click here to edit",
+                    "new_user_setting": "Please complete your profile and earn 7,500 CC",
+                    "home": "Brings you to the Application home - wherever you are.", 
+                    "logout": "Logs you out. Login to come back."
+                  }
+            }
+        },
+
+        "analytics": {
+            "title": "Analytics",
+            "help": {
+                "title": "Analytics Help",
+                "content": "Shows the usage data over all from all activities performed by this prompt."
+            }
+        },
+        "manage_company": {
+            "title": "Company Base Information",
+            "help": {
+                "title": "Company Base Information Help",
+                "content": "Company Base Information help coming soon."
+            }
+        },
+        "org_user_dashboard": {
+            "title": "Organization User Dashboard",
+            "help": {
+                "title": "Organization User Dashboard Help",
+                "content": "Organization User Dashboard help content coming soon."
+            }
+        },
+        "organization_detail": {
+            "title": "Organization Details",
+            "help": {
+                "title": "Organization details Help",
+                "content": "Organization details help content coming soon."
+            }
+        },
+        "our_orginazation": {
+            "title": "Our Organizations",
+            "help": {
+                "title": "Our Organization Help",
+                "content": "Our Organization help content coming soon."
+            }
+        },
+        "Prompt_Framing_Controls": { 
+            "title": "GPTBlue Add Prompt",
+            "help": {
+                "title": "Prompt Framing Controls Help",
+                "content": "The Prompt Framing Controls help you to manage the prompt objects and the prompt itself. You can freeze, unfreeze, share, deploy, duplicate, version, history, and delete the prompt."
+            }
+        },
+        "Prompt_Framing_Designer": {
+            "title": "Prompt Framing Designer",
+            "help": {
+                "title": "Prompt Framing Designer Help",
+                "content": "Here you enter the name and the description of the prompt. Both are NOT USED when processing the prompt. But both are vital for the Prompt library to find or review the function of the prompt."
+            }
+        },
+        "Prompt_Library": {
+            "title": "Prompt Library",
+            "help": {
+                "title": "Prompt Library Help",
+                "content": "<div>The unique Prompt Framing Modeler is helping innovation teams in hundreds of situations and innovation specific tasks.&nbsp;</div><div><span style='white-space: normal;'>Innovation teams don't need to become prompt engineers and enter their prompts strait into GPTBlue.&nbsp;</span></div><div><span style='white-space: normal;'>While todays prompting techniques are pretty rudimentary, GPTBlue already handles conditional prompt outputs, supports custom instructions,&nbsp;</span></div><div><span style='white-space: normal;'>prompt governance, and direct function calling. Think of Prompt Framing as a new programing language to model the human-to-AI interface for very business&nbsp;</span></div><div><span style='white-space: normal;'>or organization specific interaction with an otherwise very general AI.</span></div></div>"
+            }
+        },
+        "My_Applications": {
+            "title": "My Applications",
+            "help": {
+               "title": "My Applications Help",
+               "content": "<div>Welcome to the BlueCallom World. <br/>On this AI-Glazz, this is how we call the elements, you find all applications that you have access to or request access.<br/>GPTBlue IO is your AI-Workspace, where you can run all the prompts you added to your personal library.<br/>GPTBlue DID is your Development, Test, and Deploy space in case you want to create your own professional prompts.<br/>My Settings is where you setup your profile, manage your CallomCoins, the currency in the BlueCallom world.<br/>Partner Portal is for our Business Partners who want to create and sell prompts on BlueCallom<br/>Corporate Portal is for corporations who run BlueCallom as their AI network</div>"
+            }
+        },
+        "team_selection": {
+            "title": "Team Selection",
+            "help":{
+                "title": "Team Selection Help", 
+                "content": "Team Selection help coming soon..."
+            }
+        },
+        "tips": {
+            "title": "Tips",
+            "help":{
+                "title": "Tips Help", 
+                "content": "Tips you see correlate to the prompt object you selected.."
+            }
+        },
+        "user_list": {
+            "title": "User List",
+            "help":{
+                "title": "User List Help", 
+                "content": "User List Help coming soon..."
+            }
+        },
+        "user_profile": {
+            "title": "My Profile",
+            "help":{
+                "title": "Profile Card Help", 
+                "content": "Your user profile with some of the key data. Click the gear icon to edit your profile. Click on the CallomCoin value to see account details and buy more."
+            }
+        }
+    },
+    
+    "modals": {
+        "associate_company": {
+            "title": "Associate Company Account"
+        },
+        "image_crop":{
+            "title": "Edit Photo"
+        },
+        "manage_user": {
+           "title": "Manage User" 
+        },
+        "prompt_execution_corfirmmation": {
+            "title":  "Prompt Execution Confirmation"
+        },
+        "share_prompt": {
+            "title":  "Share prompt"
+        },
+        "welcome_non_loggedin": {
+            "title":  "Welcome Note"
+        }
+        
+    },
+    
+    "buttons": {
+        "abort": {
+            "label": "Abort",
+            "tooltip": "Click here to abort action"
+        },
+        "add": {
+            "label": "Add Organization",
+            "tooltip": "Click to add a organization"
+        },
+        "add_comment": {
+          "label": "Add a comment",
+          "tooltip": "Click to add a comment"
+        },
+        "add_user": {
+           "label": "Add New User",
+           "tooltip": "Click to add a new user" 
+        },
+        "ask_GPTBlue": {
+          "label": "Ask",
+          "tooltip": "Click to generate AI response"
+        },
+        "cancel": {
+          "label": "Cancel",
+          "tooltip": "Click to cancel"
+        },
+        "click_here": {
+            "label": "Click here"
+        },
+        "close": {
+            "label": "Close",
+            "tooltip": "Click here to close"
+        },
+        "close_modal": {
+            "label": "Close",
+            "tooltip": "Click here to close modal" 
+        },
+        "confirm_code":{
+            "label": "Confirm",
+            "tooltip": "Click here to confirm security code"
+        },
+        "connect_with": {
+            "label": "Connect with",
+            "tooltip": "Click here to connect"
+        },
+        "copy_prompt": {
+            "label": "Copy Prompt",
+            "tooltip": "Click to copy this prompt"
+        },
+        "copy_prompt_profile_incomplete": {
+            "tooltip": "Copy Prompt: Activate this feature to receive a prompt after completing your profile."
+        },
+        "create_company": {
+            "label": "Create a company",
+            "tooltip": "Submit a request to create a new company"
+        },
+        "disassociate": {
+            "label": "Disassociate",
+            "tooltip": "Click to disassociate from company"
+        },
+        "edit_logo": {
+            "label": "Edit Logo",
+            "tooltip": "Click here to add/edit company logo"
+        },
+        "generate": {
+            "label": "Generate",
+            "tooltip": "Click here to generate prompt icon"
+        },
+        "login": {
+          "label": "Login",
+          "tooltip": "Click here to login"
+        },
+        "ok": {
+            "label": "OK",
+            "tooltip": "Click here to proceed"
+        },
+        "register": {
+          "label": "Register",
+          "tooltip": "Click here to register"
+        },
+        "save": {
+          "label": "Save",
+          "tooltip": "Click to save"
+        },
+        "save_crop": {
+            "label": "Crop & Save",
+            "tooltip": "Click here to crop & save"
+        },
+        "send": {
+            "label": "Send",
+            "tooltip": "Click to send"
+        },
+        "social_share_close": {
+            "label": "Close",
+            "tooltip": "Click here to close modal" 
+        },
+        "submit": {
+            "label": "Submit",
+            "tooltip": "Click to submit"
+        },
+        "upload": {
+           "label": "Upload",
+            "tooltip": "Click to upload" 
+        },
+        "update": {
+            "label": "Update Organization",
+            "tooltip": "Click to update an organization"
+        }
+    },
+    
+    "icons": {
+        "copy": {
+            "label": "",
+            "tooltip": "Click here to copy URL"
+        },
+        "like_prompt_response": {
+            "label": "Like",
+            "tooltip": "You help the author to know that this prompt worked out for you"
+        },
+        "dislike_prompt_response": {
+            "label": "Dislike",
+            "tooltip": "You help the author to know that this prompt has not worked out for you"
+        },
+        "comment_prompt_response": {
+            "label": "Comment",
+            "tooltip": "Give feedback directly to prompt authors. Remember they continuously maintain and improve their prompts and that is why pay per use will build by far the best prompts over time :)"
+        },
+        "email_prompt_response": {
+            "label": "Email",
+            "tooltip": "You can email the prompt result to the email address you have registered so you have it for later too, REUSE is good for prompts too - saves energy from the enormous AI servers"
+        },
+        "pdf_prompt_response": {
+            "label": "PDF",
+            "tooltip": "You help the author to know that this prompt worked out for you"
+        },
+        "user_image": {
+            "alt": "user image"
+        },
+        "social_share": {
+            "tooltip": "Click here to share"
+        }, 
+
+        "share_prompt": {
+            "tooltip": "Click here to share this prompt. Click the name for more info"
+        },
+        
+        "new_prompt": {
+            "label": "New",
+            "tooltip": "Create a new Prompt"
+        },
+        
+        "freeze_prompt": {
+            "tooltip": "Freeze this prompt. Click the name for more info"
+        },
+        "unfreeze_prompt": {
+            "tooltip": "Unfreeze this prompt. Click the name for more info"
+        },
+        "deploy_prompt": {
+            "label": "Deploy",
+            "tooltip": "* Deploy your prompt to BlueCallom's public Prompt Library. * BlueCallom reserves the right to review the prompt before it is released. * You may have access to multiple public, private, or corporate libraries.* You will be able to select the libraries you want to deploy the prompt to."
+        },
+        "duplicate_prompt": {
+            "label": "Duplicate",
+            "tooltip": "If you want to freeze a prompt because you don't want to touch it by accident, simply create a copy to develop it further, or make a copy as archive and develop the prompt further that is already out in the market."
+        },
+        "version_prompt": {
+            "label": "Version",
+            "tooltip": "This is an important feature for pro developers. Based on our own experience it happens rather often that a prompt you wrote 5 versions ago was the most effective. But if it is overwritten it is cone. This is why we developed the versioning tool."
+        },
+        "history_prompt": {
+            "label": "History",
+            "tooltip": "This is for users, authors, or team managers to look into historical results. For privacy reasons the 'Author View' can be turned off. If so you may find that not all historic results are visible."
+        },
+        "delete_prompt": {
+            "label": "Delete",
+            "tooltip": "Click here to delete the prompt"
+        }
+        
+    },
+    
+    "images": {
+        "logo": {
+            "tooltip": "Click here to go Admin Home page"
+        },
+        "bluePromptFlag": {
+            "tooltip": "BluePrompt with unique functionality such as 'iterative', 'Function Call', 'Model' or 'Data Handling' and others"
+        }
+    },
+    
+    "inputs": {
+        "text":{
+            "company_website": {
+                "label": "Company Website",
+                "placeholder":"Company Website",
+                "url_invalid": "You have entered invalid URL"
+            },
+            "firstname": {
+                "label": "First Name",
+                "tooltip": "",
+                "maxlength_validation": "Please enter not more than 60 characters.",
+                "required_validation": "First Name is required."
+            },
+            "headline_company": {
+                "label": "Headline",
+                "placeholder":"Enter headline of your company",
+                "tooltip": "What does your company do"
+            },
+            "headline": {
+                "label": "Headline",
+                "placeholder":"Enter headline",
+                "validation_message": {
+                    "required":"Headline is required. ",
+                    "maxlength": "Please enter not more than 250 characters."
+                }
+            },
+            "linkedin_url":{
+                "label": "LinkedIn URL",
+                "placeholder":"LinkedIn URL",
+                "validation_message": {
+                    "required":"LinkedIn URL is required. ",
+                    "maxlength": "Please enter not more than 250 characters.",
+                    "url_invalid": "You have entered invalid URL"
+                }
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Enter email",
+                "invalid": "Please enter valid email"
+            },
+            "city": {
+                "label": "City",
+                "placeholder": "Enter city",
+                "validation_message": {
+                    "required": "City is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "state": {
+                "label": "State",
+                "placeholder": "Enter state",
+                "validation_message": {
+                    "required": "State is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "postal_code": {
+                "label": "Post Code",
+                "placeholder": "Enter post code",
+                "validation_message": {
+                    "required": "Post Code is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "prompt_premium": {
+                "label": "Prompt Premium",
+                "placeholder": "Enter CallomCoins",
+                "min": "Euro",
+                "max": "max",
+                "callomcoins": "In CallomCoins"
+            },
+            "prompt_earning": {
+                "label": "Prompt Earning"
+            },
+            "country": {
+                "label": "Country",
+                "placeholder": "enter country",
+                "validation_message": {
+                    "required": "Country is required."
+                }
+            } ,
+            "company": {
+                "label": "Company",
+                "placeholder": "Company",
+                "validation_message": {
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "company_name": {
+                "label": "Company Name",
+                "placeholder": "Company Name",
+                "validation_message": {
+                    "required":"Company name is required.",
+                    "maxlength": "Please enter not more than 26 characters."
+                }
+            },
+            "comment": {
+                "label": "Comment",
+                "placeholder": "Enter comment",
+                "invalid": "Comment is required and not more than 500 characters."
+            },
+            "org_name": {
+                "label": "Organization Name",
+                "placeholder":"Enter Organization name",
+                "validation_message": {
+                    "required":"Organization name is required.",
+                    "maxlength": "Please enter not more than 250 characters."
+                }
+            },
+            "registration_no": {
+                "label": "Registration No.",
+                "placeholder": "Registration No.",
+                "tooltip": "Official Company Registration Number",
+                "validation_message": {
+                    "required": "Please enter not more than 26 characters."
+                }
+            },
+            "security_code": {
+                "label": "BlueCallom Security Code (recieved via email)",
+                "placeholder": "Enter Security code"
+            }
+        },
+        "textarea": {
+            "about": {
+                "label": "About",
+                "placeholder": "Information about your company",
+                "tooltip": "Describe your company in a way that an AI system can be helpful.<br>Non commercial , non advertising, focus on your <br>1) products or services, your <br>2) audience, your <br>3) benefits and <br>4) values."
+            },
+            "org_objective": {
+                "label": "Organization Objective",
+                "placeholder": "Enter Organization Objective",
+                "validation_message": {
+                    "required":"Organization Objective is required.",
+                    "maxlength": "Please enter not more than 250 characters."
+                }
+            }
+        },
+        
+        "file": {
+            "upload": {
+                "label": "Upload File",
+                "tooltip": "Choose file to upload file"
+            },
+            "upload_image": {
+                "label": "Choose image file to upload",
+                "tooltip": ""
+            },
+            "logo_upload": {
+                "label": "Logo Upload",
+                "tooltip": "Upload a loge (size) max 2 MB"
+            }
+        },
+
+        "checkbox": {
+            "allow_to_copy": {
+                "label": "Allow to copy",
+                "tooltip": "Author allows users to copy this prompt. If Open Source it can be copied as such"
+            },
+            "auto_save": {
+                "label": "Auto Save"
+            },
+            "custom_model": {
+                "label": "Custom model",
+                "tooltip": "Allows prompts use a custom model that was uploaded into GPTBlue",
+                "help":{
+                    "title": "Custom model Help", 
+                    "content": "A custom model is typically created from a document that may contain several hundred pages. It uses the 'embeds' function to automatically train the added model."
+                }
+            },
+            "function_call": {
+                "label": "Function Call",
+                "tooltip": "Allows prompts access functions inside or outside GPTBlue",
+                "help":{
+                    "title": "Function Call Help", 
+                    "content": "A function is typically a code written in C++, ColdFusion or Python, allowing to access specific APIs, Databases, or other functions like machine controllers and more. The code can be uploaded into BlueCallom and executed when the function is called. For security purposes those functions run on custom dedicated services and will be individually reviewed. A corporate account is needed to upload such a function call."
+                }
+            },
+            "iterative": {
+                "label": "Iterative",
+                "tooltip": "Allows prompts runs in multiple phases and allows editing inside the results",
+                "help":{
+                    "title": "Iterative Help", 
+                    "content": "This 'BluePrompt' is a unique feature of GPTBlue. <br/><br/>1) When you create an iterative Prompt you assume that you want the AI to give you first a suggestion and then you complete the suggestion with your own idea. <br/><br/>2) This is why there is a Pre-Prompt-Task (you ask for guidance) and a post-prompt-task (You complete the result that the AI returned from the request for guidance) <br/><br/>3) Example: PRE-Prompt-Task: \"Create a template for my social media plan as described above (You have your thoughts in the objectives)\" Once you execute the prompt you will see a template that is already pretty good.. POST-Prompt-Task: \"I edited your template. Please review and make some additional suggestions\" Now you ran this very same prompt further (a second execution). The AI will now review your changes and make additional suggestions. It helps to perfect the outcome with your own human intelligence. This is by the way a superb example for \"Human Intelligence Augmentation\"."
+                }
+            },
+            "open_source": {
+                "label": "Open Source",
+                "tooltip": "When shared, users can create a copy and see all the details behind the prompt",
+                "help":{
+                    "title": "Open Source Help", 
+                    "content": "This means that the stand prompt is always invisible to its users. It would only confuse. If they need the full prompt the author must decide to make it available as such. To the contrary, for educational purposes, prompts mus also be available as source       code. Also in some business cases users may need to adjust prompts and can do that when it is provided as open source."
+                }
+            },
+            "org_roles": {
+                "label": "Organization Roles"
+            },
+            "publish": {
+                "label": "Publish"
+            }
+        },
+        "select": {
+            "account_status": {
+                "label": "Account Status",
+                "default_option": "Select Account Status",
+                "tooltip": "Customer = Paying Customer<br>Partner = Certified Business Partner<br>Explorer = Exploring GPTBlue<br>Other"
+            },
+            "company_type": {
+                "label": "Company Type",
+                "default_option": "Select Company Type",
+                "tooltip": "Producing products<br>Developer developing products as a service<br>Trade, trading goods and services<br>Service, providing any kind of service<br>Association, Industry and other associations<br>NGO, EDU, GOV"
+            },
+            "company_size": {
+                "label": "Company Size",
+                "default_option": "Select Company Size",
+                "tooltip": "Number of full time employees"
+            },
+            "country": {
+                "label": "Country",
+                "default_option": "All countries",
+                "validation_message": {
+                    "required": "Country is required."
+                }
+            },
+            "custom_model": {
+                "label": "Custom Model",
+                "default_option": "Select a custom model",
+                "validation_message": {
+                    "required":"Custom Model is required."
+                }
+            },
+            "company_founded": {
+                "label": "Company Founded",
+                "default_option": "Select Company Founded Year",
+                "tooltip": "When was the company founded"
+            },
+            "function_call": {
+                "label": "Select Function Call",
+                "default_option": "Please select"
+            },
+            "department_division": {
+                "label": "Department Division",
+                "default_option": "Please select"
+            },
+            "manager": {
+                "label": "Manager",
+                "default_option": "Select a manager",
+                "validation_message": {
+                    "required": "Manager is required."
+                }
+            },
+            "org": {
+                "label": "Organization",
+                "default_option": "All organizations"
+            },
+            "org_category": {
+                "label": "Organization Category",
+                "default_option": "Select a category",
+                "validation_message": {
+                    "required": "Organization Category is required."
+                }
+            },
+            
+            "org_status": {
+                "label": "Organization Status",
+                "default_option": "Select a status",
+                "validation_message": {
+                    "required": "Organization Status is required."
+                }
+            },
+            "org_level": {
+                "label": "Organization Level",
+                "default_option": "Select a organization",
+                "validation_message": {
+                    "required": "Organization Level is required."
+                }
+            },
+            "parent_org": {
+                "label": "Parent Organization",
+                "default_option": "Select  parent organization",
+                "validation_message": {
+                    "required": "Parent Organization is required."
+                }
+            },
+            "revenue": {
+                "label": "Revenue",
+                "default_option": "Select Revenue",
+                "tooltip": "Approximate revenue category"
+            }
+        }
+
+    },
+    "table": {
+        "actions": {
+            "label": "Actions"
+        },
+        "prompt_created": {
+            "label": "Prompts created"
+        },
+        "prompt_used": {
+            "label": "Prompts used"
+        },
+        "user_domain": {
+            "label": "Domain"
+        },
+        "user_image": {
+            "label": "Img"
+        },
+        "user_name": {
+            "label": "Name"
+        },
+        "user_ppg": {
+            "label": "PPG",
+            "tooltip": "Productivity Gain"
+        },
+        "user_role": {
+            "label": "Role"
+        },
+        "user_status": {
+            "label": "Status"
+        },
+        "user_type": {
+           "label": "Type" 
+        }
+    },
+    
+    "links": {
+        
+        "about": {
+            "label": "About",
+            "tooltip": "Click here to know about"
+        },
+        "back_to_prompts": {
+            "label": "Back to My Prompts",
+            "tooltip": "Click here to return to My Prompts section "
+        },
+        "contact": {
+            "label": "Contact",
+            "tooltip": "Click here to contact"
+        },
+        "click_here": "Click here",
+        "terms": {
+            "label": "Terms",
+            "tooltip": "Click here to know terms"
+        },
+
+        "gptblue_io": {
+            "label": "GPTBlue IO",
+            "tooltip": "Here you can execute prompts from your personal prompt library or prompts that have been assigned to you from somebody you know."
+        },
+        "blue_exchange": {
+            "label": "Blue Exchange",
+            "tooltip": "This is the place to select prompts you are interested in from available prompts"
+        },
+        "my_settings": {
+            "label": "My Settings",
+            "tooltip": "Here you edit your profile."
+        },
+        "partner_portal": {
+            "label": "Partner Portal",
+            "tooltip": "Do you want to become a BlueCallom Partner? Please click to register. Once you are approved, you will find the dedicated partner portal when you click here."
+        },
+
+        "advanced": {
+            "label": "Advanced",
+            "tooltip": "Allows to expand the prompt object list on the lower left hand side",
+            "help":{
+                "title": "Advanced Prompt Class Help", 
+                "content": "It helps you to start with easy prompts and advance over time or when needed. When switching from Standard, to Advanced, to Expert the user sees more and more features that require some more knowledge about the system <br/><br/>a) Standard shows four standard prompt objects: Actor | Environment | Challenge | Task | Default Action <br/><br/>b) Advances shows additionally: Objective | Audience | Writing Style | Output Format References <br/><br/>c) Expert shows all above plus : Data Handling | Iterative Tasks | Function Call | Custom Model Access"
+            }
+        },
+        "alphabetical": {
+            "label": "Alphabetical",
+            "tooltip": "Alphabetical by Prompt Name"
+        },
+        "alphabetical_sort": {
+            "label": "A",
+            "tooltip": "Sort by Alphabetical Order"
+        },
+        "newest_sort": {
+            "label": "N",
+            "tooltip": "Sort by Created Date"
+        },
+        "updated_sort": {
+            "label": "U",
+            "tooltip": "Sort by Updated Date"
+        },
+        "copy": {
+            "label": "",
+            "tooltip": "Click here to open this URL in a new window"
+        },
+        "expert": {
+            "label": "Expert",
+            "tooltip": "Allows to expand the prompt object list on the lower left hand side",
+            "help":{
+                "title": "Expert Prompt Class Help", 
+                "content": "It helps you to start with easy prompts and advance over time or when needed. When switching from Standard, to Advanced, to Expert the user sees more and more features that require some more knowledge about the system <br/><br/>a) Standard shows four standard prompt objects: Actor | Environment | Challenge | Task | Default Action <br/><br/>b) Advances shows additionally: Objective | Audience | Writing Style | Output Format References <br/><br/>c) Expert shows all above plus : Data Handling | Iterative Tasks | Function Call | Custom Model Access"
+            }
+        },
+        "invite": {
+            "label": "Invite",
+            "tooltip": "Accessibility is only for the author and individually invited people",
+            "help":{
+                "title": "Invite Accessibility Help", 
+                "content": "In this stage the share button is active so it can be shared with others. However it is not possible to deploy such a prompt. Also no public URL is disclosed or if previously, access is no longer possible."
+            }
+        },
+        "most_used": {
+            "label": "Most Used",
+            "tooltip": "Most Used Prompts by the community"
+        },
+        "most_productive": {
+            "label": "Most Productive",
+            "tooltip": "Most Productive by average aggregated PPG (Prompt Productivity Gain)"
+        },
+        "newest": {
+          "label": "Newest",
+          "tooltip": "Newest prompts first"
+        },
+        "none": {
+            "label": "None",
+            "tooltip": "Accessibility is only for the author",
+            "help":{
+                "title": "None Accessibility Help", 
+                "content": "In this stage the share button is inactive so it cannot be shared with others.   Consequently it is also not possible to deploy such a prompt Also no public URL is disclosed or if previously, access is no longer possible."
+            }
+        },
+       
+        "public": {
+            "label": "Public",
+            "tooltip": "Accessibility is publicly granted for everybody",
+            "help":{
+                "title": "Public Accessibility Help", 
+                "content": "share button and the deploy button is active. Also a public URL is displayed t be shared publicly on the Internet in general. "
+            }
+        },
+        "standard": {
+            "label": "Standard",
+            "tooltip": "Allows to expand the prompt object list on the lower left hand side",
+            "help":{
+                "title": "Standard Prompt Class Help", 
+                "content": "It helps you to start with easy prompts and advance over time or when needed. When switching from Standard, to Advanced, to Expert the user sees more and more features that require some more knowledge about the system <br/><br/>a) Standard shows four standard prompt objects: Actor | Environment | Challenge | Task | Default Action <br/><br/>b) Advances shows additionally: Objective | Audience | Writing Style | Output Format References <br/><br/>c) Expert shows all above plus : Data Handling | Iterative Tasks | Function Call | Custom Model Access"
+            }
+        },
+        "studio": {
+          "label": "GPTBlue Studio",
+          "tooltip": "Do you want to create your own prompts? Try it out."
+        }
+    },
+    
+    "text": {
+        "and": "and",
+        "not_recieved_email": "If you did not recieve the confirmation email",
+        "objective":"Objective",
+        "email_request": "to request a new one",
+        "email_spam": "Make sure the email is not cought by a spam filter, OR disassociate from the account.",
+        
+        "advance": {
+            "label": "Advance",
+            "tooltip": "Click here to show advance mode"
+        },
+        "alphabetical": {
+            "label": "Alphabetical by Prompt Name Analytics",
+            "tooltip": ""
+        },
+        "average_cc_used": {
+            "label": "Estimated Usage in CC",
+            "tooltip": "Estimated CC used to execute this prompt"
+        },
+        "bluecallomer_since": {
+            "label": "BlueCallomer Since",
+            "tooltip": ""
+        },
+        "business": {
+            "label": "Business",
+            "tooltip": ""
+        },        
+        "bussiness_email": {
+            "label": "Bussiness Email"
+        },
+        "cc": {
+          "label": "CC",
+          "tooltip": "Sum of available gold and status coins"
+        },
+        
+        "company_detail": {
+            "label": "Company Detail",
+            "connected": "Your account is connected to",
+            "not_exits": "Your company does not exits in the BlueCallom.<br/>Please contact Sales Team.",
+            "not_connected": "Your profile is not connected with your company. If you want to connect with your company, please",
+            "not_connected_company": "You are not connected with",
+            "want_connect": "If you want to connect with your company, please",
+            "provide_website": "Your profile is not connected with any company.<br/>If you want to connect with your company account, you need to provide company website.",
+            "on_hold": "<strong class='text-danger'>On Hold:</strong> Your business account is still awaiting confirmation.<br/>To complete the account association, please",
+            "not_accepted_domain": "is not accepted company domain for account association.<br/>If you want to connect with your company account, you need to provide website of your company.",
+            "unmatched_email_company_domain": "Your profile is not connected with your company. To get connected, make sure your business email domain matches with your company website domain."
+        },
+        "company_name": {
+            "label": "Company Name"
+        },
+        "custom_model_desc": {
+            "label": "Custom Model Description",
+            "none_selected": "Please select Custom Model"
+        },
+        "department_name": {
+            "label": "Department Name"
+        },
+        "email_gptblue_response": {
+            "label": "Email GPTBlue response", 
+            "tooltip": ""
+        }, 
+        "freeze_prompt_label": {
+            "label": "Freeze",
+            "tooltip": "In the Freeze mode a prompt can no longer be edited until you unfreeze",
+            "help":{
+                "title": "Freeze Prompt Help", 
+                "content": "It freezes a prompt so that it can no longer be changed. This is important when sharing the prompt to collaborate with others. When the original Author \"Freezes\" the         prompt no more changes can be done. The Author has to click again to \"unfreeze\" and edit it."
+            }
+        },
+        "function_call_desc": {
+            "label": "Function Call Description",
+            "none_selected": "Please select Function Call"
+        },
+        "unfreeze_prompt_label": {
+            "label": "Unfreeze",
+            "tooltip": "Revert prompt to editable mode. Click to unfreeze and resume editing.",
+            "help":{
+                "title": "Unfreeze Prompt Help", 
+                "content": "The Unfreeze icon allows the author to undo the freezing of a prompt, enabling further editing. Once unfrozen, modifications can be made to the prompt as needed. Clicking the Unfreeze icon releases the prompt from its frozen state, allowing for collaborative editing to resume."
+            }
+        },
+        
+        "most_used": {
+            "label": "Most Used Prompts by the community",
+            "tooltip": ""
+        },
+        "most_productive": {
+            "label": "Most Productive by average aggregated PPG (Prompt Productivity Gain)",
+            "tooltip": ""
+        },
+        
+        "newest": {
+          "label": "Newest prompts first",
+          "tooltip": ""
+        },
+        
+        "personal": {
+            "label": "Personal",
+            "tooltip": ""
+        },
+        "prompt_author": {
+            "label": "Prompt Author",
+            "tooltip": ""
+        },
+        "propmt_icon": {
+            "label": "Prompt Icon"
+        },
+        "ref_id": {
+          "label": "Your Referral Id",
+          "tooltip": "Use your referral key to invite \"Friends and Colleagues\" and earn additional CC"
+        },
+        
+        "simple": {
+            "label": "Simple",
+            "tooltip": "Click here to show simple mode"
+        },
+        
+        "share_prompt_label": {
+            "label": "Share",
+            "tooltip": "Share this prompt with contacts",
+            "help":{
+                "title": "Share Prompt Help", 
+                "content": "The share button allows you to share a prompt with the following <br/>* People from within your company <br/>* Users you have been invited by"
+            }
+        },
+        "total_cc_used": {
+            "label": "CC Used",
+            "tooltip": "CC used to generate the image"
+        },
+        
+        "welcome_user": {
+            "label": "Welcome user",
+            "tooltip": ""
+        }
+    },
+    
+    "message": {
+        "loading": "Loading...",
+        "success": "Success!",
+        "failed": "Failed",	
+        "error_try_again": "Error while processing, Please try again.",
+        "login_error":"Unable to login with social account, please try again later",
+        "logout_success": "Logged out successfully!",
+        "logout_error": "Error while logging out, Try again later", 
+
+        "confirm_copy_prompt": "Are you sure you want to make copy of this Task?",
+        "confirm_prompt_execution": "For this prompt CC",
+        "will_be": "will be deducted",
+        "confirm_prompt_execution_cc_notavailable": "For this prompt estimated Usage of cc is not available",
+        "donot_ask": "Don’t ask again",
+        "confirm_delete_prompt": "Delete this prompt?",
+        "confirm_freeze_prompt": "Freeze this prompt so it can no longer be edited by you or anybody it is shared with. To unfreeze click this button again",
+	    "confirm_unfreeze_prompt": "Unfreeze this prompt so it can be edited again by you or anybody it is shared with. You may consider copying this prompt first and freeze the copy to be sure you have this version handy",
+        
+        "success_freezed_prompt": "Prompt Freezed Successfully",
+        "success_unfreezed_prompt": "Prompt Unfreezed Successfully",
+        "failed_freezed_prompt": "Prompt Freeze Failed",
+        "success_delete_prompt": "Prompt Deleted Successfully",
+        "failed_delete_prompt": "Prompt Delete Failed",
+        
+	    "characters_remaining": "character(s) remaining",
+	    "session_expired": "Your session is expired please re-login again.",
+	    "session_extended": "Your session is re-authenticated",
+	    "common_error": "Unable to access server right now, Please try again later.",
+	    "copied_msg": "URL copied to clipboard",
+        
+        "file_required": "File is required",
+        "file_size_5MB_error": "The file size must be less than 5 MB.",
+        "file_size_1MB_error": "The file size must be less than 1 MB.",
+        "file_read_error": "Error while reading file, Please try again.",
+        "file_type_csv_pdf_error": "The file must be a CSV or PDF file.",
+        "file_type_csv_pdf_doc_docs_error": "The file must be a CSV, PDF, DOC, DOCS file.",
+
+        "file_type_JPEG_JPG_PNG_error": "The uploaded image must be a JPEG, JPG or PNG file.",
+        "file_crop_image_error": "Please crop the image before submitting.",
+        
+        "generate_pdf_error": "Error while generating a pdf, Please try again.",
+
+
+
+        "no_record_found": "No Record Found.",
+
+        "security_code_required": "Security code is required.",
+        "success_file_upload": "File uploaded successfully.",
+        "error_file_upload": "Error while uploading file, Please try again.",
+        "error_rating_card": "Error rating a card",
+        "welcome_non_loggedin_msg" : "<p>Welcome to GPTBlue a professional, high-productive Gen-AI solution.      </p><p>You maybe able to run the prompt once. If you register, you get 10,000 CallomCoins to run or develop approximately 30 professional high-productivity prompts.</p>" 
+
+    }
+}
